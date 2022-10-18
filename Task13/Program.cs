@@ -7,6 +7,10 @@ int.TryParse(Console.ReadLine()!, out a);
 
 int temp = a;
 
+if (a <= 99) {Console.WriteLine("В введенном числе - третьей цифры нет");}
+
+else
+{
 int d = 0; 
 while(a != 0)
     {
@@ -15,6 +19,6 @@ while(a != 0)
     }
 
 Console.WriteLine($"Третья цифра введенного числа - {(temp / (int) Math.Pow(10, d - 3)) % 10}");
-
+}
 
 
